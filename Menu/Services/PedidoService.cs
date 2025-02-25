@@ -5,6 +5,10 @@ namespace Menu.Services
 {
     public class PedidoService(IPedidoRepository pedidoRepository)
     {
+        public Pedido BuscarPedido(int pedidoId)
+        {
+            return pedidoRepository.ObterPedido(pedidoId);
+        }
         public Pedido CriarPedido(List<MenuItem> itens)
         {
             var pedido = new Pedido { Itens = itens, Total = itens.Sum(item => item.Preco) };
