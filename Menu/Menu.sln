@@ -1,9 +1,11 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
-VisualStudioVersion = 17.12.35707.178 d17.12
+VisualStudioVersion = 17.12.35707.178
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Menu", "Menu.csproj", "{251BF670-6CBE-4FDF-B309-9C0CF045FD45}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MenuDigital.Tests", "..\MenuDigital.Tests\MenuDigital.Tests.csproj", "{C89B3F8B-E52A-448D-9771-39B26A09B3D6}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +17,10 @@ Global
 		{251BF670-6CBE-4FDF-B309-9C0CF045FD45}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{251BF670-6CBE-4FDF-B309-9C0CF045FD45}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{251BF670-6CBE-4FDF-B309-9C0CF045FD45}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C89B3F8B-E52A-448D-9771-39B26A09B3D6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C89B3F8B-E52A-448D-9771-39B26A09B3D6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C89B3F8B-E52A-448D-9771-39B26A09B3D6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C89B3F8B-E52A-448D-9771-39B26A09B3D6}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
