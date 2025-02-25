@@ -1,6 +1,15 @@
+using Menu.Repositories.Implementations;
+using Menu.Repositories.Interfaces;
+using Menu.Services;
+
 var builder = WebApplication.CreateBuilder(args);
 
-// Add services to the container.
+// Registro de serviços
+builder.Services.AddScoped<IMenuRepository, MenuRepository>();
+builder.Services.AddScoped<IPedidoRepository, PedidoRepository>();
+
+builder.Services.AddScoped<MenuService>();
+builder.Services.AddScoped<PedidoService>();
 
 builder.Services.AddControllers();
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
