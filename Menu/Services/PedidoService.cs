@@ -12,7 +12,8 @@ namespace Menu.Services
         public Pedido CriarPedido(List<MenuItem> itens)
         {
             var pedido = new Pedido { Itens = itens, Total = itens.Sum(item => item.Preco) };
-            return pedidoRepository.AdicionarPedido(pedido);
+            var retornoPedido = pedidoRepository.AdicionarPedido(pedido);
+            return retornoPedido;
         }
 
         public void CancelarPedido(int pedidoId)
